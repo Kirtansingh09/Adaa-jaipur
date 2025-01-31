@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="payment.css">
+    <script src="https://kit.fontawesome.com/e8fa2e31b4.js" crossorigin="anonymous"></script>
+    <script defer src="payment.js"></script>
+</head>
+<body>
+    <div class="payment-container">
+        <!-- Left Section - Payment Methods -->
+        <div class="payment-methods">
+            <h3>Payment methods</h3>
+            <hr style="border: 1px solid #ccc; margin: 0 15px;">
+            <ul>
+                <li class="active"><span class="icon">💳</span> Payment by card</li>
+                <li><span class="icon">🏦</span> Internet banks</li>
+                <li><span class="icon">📱</span> Apple/Google pay</li>
+            </ul>
+            <hr style="border: 1px solid #ccc; margin: 0 15px;">
+        </div>
+
+        <!-- Middle Section - Card Payment Form -->
+        <div class="payment-form">
+            <a href="https://www.shift4shop.com/credit-card-logos.html"><img alt="Credit Card Logos" title="Credit Card Logos" src="https://www.shift4shop.com/images/credit-card-logos/cc-lg-4.png" width="250px" height="auto"></a>
+            <hr style="border: 1px solid #ccc; margin: 0 15px;">
+            <!-- <div class="card-icons">
+                <img src="visa.png" alt="VISA">
+                <img src="mastercard.png" alt="MasterCard">
+                <img src="amex.png" alt="AMEX">
+                <img src="discover.png" alt="Discover">
+            </div> -->
+            <form id="payment-form">
+                <label for="card-number">Card number</label>
+                <input type="text" id="card-number" placeholder="Card number" maxlength="16" required>
+
+                <div class="expiry-cvv">
+                    <div>
+                        <label for="expiry-date">Expiry date</label>
+                        <input type="text" id="expiry-date" placeholder="MM/YY" maxlength="5" required>
+                    </div>
+                    <div>
+                        <label for="cvv">CVV</label>
+                        <input type="password" id="cvv" placeholder="CVV" maxlength="3" required>
+                    </div>
+                </div>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="example@email.com" required>
+
+                <button type="submit" class="pay-btn">PAY NOW</button>
+            </form>
+        </div>
+
+        <!-- Right Section - Order Information -->
+        <div class="order-info">
+            <h3>Order information</h3>
+            <hr style="border: 1px solid #ccc; margin: 0 15px;">
+            <p><strong>Order description</strong></p>
+            <p>Test payment</p>
+            <hr style="border: 1px solid #ccc; margin: 15px 15px;">
+
+            <a href="https://www.shift4shop.com/credit-card-logos.html"><img alt="Credit Card Logos" title="Credit Card Logos" src="https://www.shift4shop.com/images/credit-card-logos/cc-lg-4.png" width="250px" height="auto"></a>
+            <!-- <div class="card-icons">
+                <img src="visa.png" alt="VISA">
+                <img src="mastercard.png" alt="MasterCard">
+                <img src="amex.png" alt="AMEX">
+                <img src="discover.png" alt="Discover">
+            </div> -->
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <script src="https://kit.fontawesome.com/e8fa2e31b4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <p>Payment Method</p>
+            <hr style="border: 1px solid #ccc; margin: 0 15px">
+            <div class="methods">
+                <div onclick="dofun()" id="tColorA" style="color: greenyellow;"><i class="fa-solid fa-credit-card" style="color: greenyellow;"></i>Payment by card
+                </div>
+                <div onclick="dofun()" id="tColorB"><i class="fa-solid fa-building-columns"></i>Internet Banks
+                </div>
+                <div onclick="dofun()" id="tColorC"><i class="fa-solid fa-wallet"></i>Apple/Google Pay
+                </div>
+            </div>
+            <hr style="border: 1px solid #ccc; margin: 0 15px;">
+        </div>
+
+
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="container">
+        <div class="payment-form">
+            <h1>Payment Details</h1>
+
+            <form id="payment-form">
+                <div class="form-group">
+                    <label for="card-holder">Card Holder Name</label>
+                    <input type="text" id="card-holder" name="cardHolder" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="card-number">Card Number</label>
+                    <input type="text" id="card-number" name="cardNumber" maxlength="16" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="expiry-date">Expiry Date</label>
+                        <input type="text" id="expiry-date" name="expiryDate" placeholder="MM/YY" maxlength="5" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cvv">CVV</label>
+                        <input type="password" id="cvv" name="cvv" maxlength="3" required>
+                    </div>
+                </div>
+
+                <button type="submit">Pay Now</button>
+                <div class="rozarpay">
+
+
+                </div>
+            </form>
+        </div>
+    </div> -->
+
+
+
+    <script src="payment.js"></script>
+</body>
+</html>
